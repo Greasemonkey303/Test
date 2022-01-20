@@ -19,7 +19,7 @@ print ("-" * 50)
 
 try: 
         for port in range(50,85):
-            s= socket.socker(socket.ap_INET, socket.SOCK_STREAM)
+            s= socket.socket(socket.ap_INET, socket.SOCK_STREAM)
             socket.setdefaulttimeout(1)
             result= s.connect_ex((target,port)) #returns an error indecator
             if result == 0:
@@ -35,4 +35,4 @@ except socket.gaierror:
 except socket.error:
     print ("Couldn't connect to server")
     sys.exit()
-    
+
