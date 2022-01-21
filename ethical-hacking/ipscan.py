@@ -1,3 +1,4 @@
+#!/bin/bash
 import portscanner
 
 ip = "testphp.vulnweb.com"
