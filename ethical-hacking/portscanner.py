@@ -1,3 +1,5 @@
+#!/bin/bash
+
 import socket
 from IPy import IP
 
