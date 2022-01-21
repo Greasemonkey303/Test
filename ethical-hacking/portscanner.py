@@ -4,7 +4,7 @@ from IPy import IP
 
 def scan(target):
     converted_ip = check_ip(target)
-    print("\n" + "[-_0 Scanning Target] " + str(target))
+    print('\n' + '[-_0 Scanning Target] ' + str(target))
     for port in range(1, 2000):
         scan_port(converted_ip, port)
 
@@ -28,18 +28,18 @@ def scan_port(ipaddress, port):
         sock.connect((ipaddress, port))
         try:
             banner = get_banner(sock)
-            print(" [+] Open Port" + str(port) + " : " +
-                  str(banner.decode() .strip("\n")))
+            print(' [+] Open Port' + str(port) + ' : ' +
+                  str(banner.decode() .strip('\n')))
         except:
-            print("[+] Open Port" + str(port))
+            print('[+] Open Port' + str(port))
     except:
         pass
 
-
-targets = input(
-    "[+] Enter Target/s To Scan (split multiple targets with , ): ")
-if ',' in targets:
-    for ip_add in targets.split(","):
-        scan(ip_add.strip(" "))
-else:
-    scan(targets)
+if __name__ == "__main__":
+    targets = input(
+        '[+] Enter Target/s To Scan (split multiple targets with , ): ')
+    if ',' in targets:
+        for ip_add in targets.split(','):
+            scan(ip_add.strip(' '))
+    else:
+        scan(targets)
