@@ -1,7 +1,7 @@
 # /bin/python3
 
 from unicodedata import name
-
+#epsode 1-2
 
 print ("Hellow, welcome to NetworkChuck Coffie!!!!")
 
@@ -15,4 +15,16 @@ print (name + " , what would you like from our mwny today? Here is what we are s
 
 order = input ()
 
-print ("Sounds Good " + name + ", We'll have that " + order + " ready for you in a moment.") 
+price = 8
+
+quantity = input("How many coffees would you like?\n")
+
+total = price * int(quantity) 
+
+print("Thank you. Your rotal is: $" + str(total)) 
+
+print ("Sounds Good " + name + ", We'll have your " + quantity + " " + order + " ready for you in a moment.") 
+
+#episode 3
+
+#got it done 
