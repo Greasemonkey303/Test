@@ -1,4 +1,4 @@
-# /bin/python3
+#! /bin/python3
 
 from simplejson import load
 import sys
