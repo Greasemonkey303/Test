@@ -9,3 +9,6 @@ def index(response):
 
 def home(response):
     return render(response, "main/home.html", {})
+
+
+    # https://www.youtube.com/watch?v=dam0GPOAvVI  time stamp 59:09
