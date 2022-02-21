@@ -9,5 +9,5 @@ def index(response, id):
     item = ls.item_set.get(id=1)
     return HttpResponse("%s" %(ls.name, str(item.text)))
 
-# video time stamp 44:34
+
 
