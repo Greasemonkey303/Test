@@ -1,3 +1,4 @@
+from venv import create
 from rest_framework import serializers
 from .models import Room
 
@@ -7,3 +8,9 @@ class RoomSerializer(serializers.ModelSerializer):
         model = Room
         fields = ('id', 'code', 'host', 'guest_can_pause',
                   'votes_to_skip', 'created_at')
+
+
+class CreateRoomSerializer(serializers.ModelSerializer):
+    class Metta:
+        model = Room
+        fields = ('guest_can_pause', 'votes_to_skip')
