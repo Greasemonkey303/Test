@@ -5,7 +5,8 @@ import random
 # Try to fix auto field 
 class Tags(models.Model):
     id = models.AutoField(primary_key=True)
-# Try to fix auto field 
+# Try to fix auto field
+
 
 def generate_unique_code():
     length = 6
