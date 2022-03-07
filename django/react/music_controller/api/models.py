@@ -2,6 +2,8 @@ from django.db import models
 import string
 import random
 
+class Tags(models.Model):
+    id = models.AutoField(primary_key=True)
 
 def generate_unique_code():
     length = 6
@@ -15,6 +17,7 @@ def generate_unique_code():
 
 
 class Room(models.Model):
+    id = models.AutoField(primary_key=True)
     code = models.CharField(
         max_length=8, default=generate_unique_code, unique=True)
     host = models.CharField(max_length=50, unique=True)
